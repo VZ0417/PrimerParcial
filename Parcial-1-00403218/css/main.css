@@ -1,0 +1,460 @@
+/*El siguiente CSS ha sido desarrolado por el alumno Carlos Víctor Zaun Gómez, portador del carnet: 00403218, respetando los derechos de auditoría del 
+docente Nestor Aldana*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* El CSS siguiente esta pensando primero para moviles y luego para 
+   Escritiorio*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+}
+
+/* El estilo base para moviles*/
+body {
+    background-color: #112935;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*Alineado de elementos, relleno, tamaño de fuente - .header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+/*Imagen*/
+.src-only {
+    display: none;
+}
+
+/*Menú móvil, sin desplegar*/
+.hide-mobile {
+    display: none;
+}
+
+/*Fuente, relleno y línea de altura, p en Big Hero*/
+p{
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+/*Ancho y altura .logo en header*/
+.logo {
+    width: 90px;
+    margin: 1em;
+}
+
+/*Color, posición, tamaño de fuente, decoración, alineación de ítems, envoltura de .options*/
+.options {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    right: 95%;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+/*Tamaño de fuente menu, último hijo*/
+.options i:last-child {
+    font-size: 1.6rem;
+}
+
+/* Big area */
+.big-hero {
+    padding-bottom: 5em;
+}
+
+/*Anchoe de imagen*/
+.big-hero img {
+    width: 150px;
+}
+
+/*tamaño de fuente, espaciado entre letras, margen superior y peso de fuente, .big-hero h2*/
+.big-hero h2 {
+    font-size: 1.875em;
+    font-weight: 700;
+    letter-spacing: 0.002em;
+    margin-top: 1em ;
+}
+
+/*tamañ fuente y color de texto, .big-hero p*/
+.big-hero p {
+    font-size: 0.9em;;
+    color: #D7DEE6;
+}
+
+/* CSS Social Links*/
+.social-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*color, decoración de teto y tamañaño de fuente, lista social-lnks*/
+.social-links li a{
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.social-links i.fab{
+    font-size: 5rem;
+    padding: 0rem 1.5rem;
+}
+
+.big-hero i.fas {
+    font-size: 5rem;
+    padding: 1.5rem;
+    color: #0AC693;
+}
+
+/*Css Green Area*/
+.green-area {
+    background-color: #0AC693; 
+}
+
+/*padding de contenedor dentro de vreen area*/
+.green-area>.container{
+    padding: 1em 2.5em 1em 2.5em;
+}
+
+/*padding y margen inferior .post*/
+.post {
+    padding: 1em;
+    margin-bottom: -2px;
+}
+
+/*Tamañan, peso de fuente, y margen de .post h2*/
+.post h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 1em;
+}
+
+/*Estilo de lista*/
+.post ul {
+    list-style: none;
+}
+
+/*altura y ancho mínimo, y margen de  lista .post ul li*/
+.post ul li {
+    min-height: 300px;
+    max-width: 350px;
+    margin: 2rem auto;
+}
+
+/*Paddind alineación, borde de radio, color de fondo y padding .post ul li article*/
+.post ul li article {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+/*altura y ancho de imagen .post article img*/
+.post article img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Fuente, color, margen, padding .post article h3*/
+.post article h3 {
+    color: #0D5061;
+    margin-top: 2em;
+    padding: 0em 1rem;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Fuente, color y padding .post article*/
+.post article p {
+    color:#112935;
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+/* About */
+
+/*Padding al ontainer dentro de about*/
+.about>.container{
+    padding: 0.5em 2.5em 2em 2.5em;
+}
+
+/*peso de fuente, tamaño de fuente, margen de -about h2*/
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 2em;
+}
+
+/*Ancho de imagen*/
+.bio-info img{
+   width: 200px;
+}
+
+/*tamaño de guente, relleno, alineación de texto, líne de altura y espaciado - .bio-info p*/
+.bio-info p{
+    font-size: 14px;
+    padding: 2em;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+/*Monitor, direccion de felixión, alineación de texto y relleno de .contact*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 1em;
+}
+
+/*Margen superior .contact*/
+.contact * + * {
+    margin-top: 1.5em;
+}
+
+/*MOnitor y dirección de flexibilidad .contact-form*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Peso de fuente - contact-form label*/
+.contact-form label {
+    font-weight: 600;
+}
+
+/*Relleno, borde y radio de borde, tamaño de fuente, ancho de .contact-form input, .contact-form textarea*/
+.contact-form input, .contact-form textarea{
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 0px 2em;
+    font-size: 1em;
+    width: 100%;
+}
+
+/*Altura de .contact-form textarea*/
+.contact-form textarea {
+    height: 140px;
+}
+
+/* Decorando placeholder */
+::-webkit-input-placeholder { 
+    color: #D7DEE6; 
+} 
+ 
+/*Confiruración de configuración de apariencia*/
+:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
+ 
+::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
+ 
+:-ms-input-placeholder { color: #D7DEE6; }
+/*Fin de configuración de apariencia*/
+
+/*CSS Formulario, radio de borde, color de fondo, tamaño de fuente, color de texto, espaciado de letra */
+.contact-form input[type=submit] {
+    border-radius: 0px 1.2em;
+    background-color: #F74442;
+    font-weight: 400;
+    color:rgb(189, 200, 214);
+    font-size: 0.85rem;
+    letter-spacing: 0.07em;
+}
+
+/*Imagen de fondo*/
+.black-decoration{
+    background-image: url("../images/decoracion_oscura_small.svg");
+}
+
+/*Relleno superior, color de fondo y color de letra de footer*/
+footer{
+    padding-top: 1em;
+    background-color: #0D5061;
+    color:#D7DEE6;
+}
+
+/*Margend e footer*/
+footer .social-links {
+    margin: 0;
+}
+
+/*Color de fondo, posicion, posición en z, altura y anchura .menu*/
+.menu {
+    background-color: #112935;
+    position: absolute;
+    z-index: 20;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+/*Estilo de lista, alineación de texto y relleno .menu*/
+.menu {
+    list-style: none;
+    text-align: left;
+    padding: 1em;
+}
+
+/*Relleno, margen superior y configuración monitor .menu li*/
+.menu li {
+    display: block;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+/*Color y decoración d etexto, elemento a .menu li*/
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Hover Lista - Contacto*/
+#menu li:nth-child(4) a:hover {
+    color: red;
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+
+    /*Altura .header*/
+    .header {
+        height: 20vh;
+    }
+
+    /*altura .big-hero*/
+    .big-hero {
+        height: 80vh;
+    }
+
+    /*Tamaño de fuente - .big-hero p*/
+    .big-hero p {
+        font-size: 0.7em;
+    }
+
+    /*Estilo de lista, monitor, flexibilidad de envoltura y dirección de contenido .post ul*/
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /*Altura mínima y máxima, configuración de felixibilidad, y margen .post ul li*/
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+    }
+
+    /*Ancho y alto .logo*/
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    /*Color de fondo, posición, índice en z, altura, ancho, margen superior - .menu*/
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    /*Grid para dibvidir container*/
+    .about>.container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(502px, 1fr));
+        grid-gap: 10px;
+    }
+
+    /*Expandiendo h2 de .about*/
+    .about>.container>h2{
+        grid-area: span 1 /span 2 ;
+    }
+
+    /* Padding de Grid y cambo de fuente a clases descritas*/
+    .about .contact, .about .bio-info{
+        padding: 2em;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    /*Ancho de formulario*/
+    .about .contact-form{
+        width: 60%;
+    }
+
+    /*Ancho de botón contactar*/
+    .about .contact-form input[type="submit"]{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /*Adaptando pantalla*/
+
+    /*Altura, ancho y margen .container*/
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    /*Modificaciones de anchura*/
+    .t0p{
+        display:none;
+       }
+       .t20p{
+        width:20%;
+       }
+       .t40p{
+        width:60%;
+       }
+       .t80p{
+        width:80%;
+       }
+       .t100p{
+        width:100%;
+    }      
+}
+
+}
